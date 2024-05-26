@@ -42,12 +42,12 @@ struct VaultListView: View {
                                 }
                             }
                         }
-                        .onDelete { indexSet in
-                            indexSet.ForEach { index in
+                        .onDelete(perform: { indexSet in
+                            indexSet.forEach { index in
                                 let vault = vaults[index]
                                 context.delete(vault)
                             }
-                        }
+                        })
                     }
                     .listStyle(.plain)
                 }
