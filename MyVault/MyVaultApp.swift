@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MyVaultApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VaultListView()
         }
+        .modelContainer(for: Vault.self)
+    }
+    
+    init() {
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }

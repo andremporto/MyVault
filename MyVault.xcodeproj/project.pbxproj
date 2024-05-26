@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20E90792C034E6F002052A1 /* NewVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E90782C034E6F002052A1 /* NewVaultView.swift */; };
 		A22DE0112C0345E900646A92 /* MyVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE0102C0345E900646A92 /* MyVaultApp.swift */; };
-		A22DE0132C0345E900646A92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE0122C0345E900646A92 /* ContentView.swift */; };
+		A22DE0132C0345E900646A92 /* VaultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE0122C0345E900646A92 /* VaultListView.swift */; };
 		A22DE0152C0345EA00646A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22DE0142C0345EA00646A92 /* Assets.xcassets */; };
 		A22DE0182C0345EA00646A92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22DE0172C0345EA00646A92 /* Preview Assets.xcassets */; };
 		A22DE0222C0345EA00646A92 /* MyVaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE0212C0345EA00646A92 /* MyVaultTests.swift */; };
 		A22DE02C2C0345EA00646A92 /* MyVaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE02B2C0345EA00646A92 /* MyVaultUITests.swift */; };
 		A22DE02E2C0345EA00646A92 /* MyVaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE02D2C0345EA00646A92 /* MyVaultUITestsLaunchTests.swift */; };
+		A22DE03B2C03463900646A92 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE03A2C03463900646A92 /* Vault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A20E90782C034E6F002052A1 /* NewVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVaultView.swift; sourceTree = "<group>"; };
 		A22DE00D2C0345E900646A92 /* MyVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22DE0102C0345E900646A92 /* MyVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVaultApp.swift; sourceTree = "<group>"; };
-		A22DE0122C0345E900646A92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A22DE0122C0345E900646A92 /* VaultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultListView.swift; sourceTree = "<group>"; };
 		A22DE0142C0345EA00646A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A22DE0172C0345EA00646A92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A22DE01D2C0345EA00646A92 /* MyVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,7 @@
 		A22DE0272C0345EA00646A92 /* MyVaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyVaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22DE02B2C0345EA00646A92 /* MyVaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVaultUITests.swift; sourceTree = "<group>"; };
 		A22DE02D2C0345EA00646A92 /* MyVaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A22DE03A2C03463900646A92 /* Vault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				A22DE0102C0345E900646A92 /* MyVaultApp.swift */,
-				A22DE0122C0345E900646A92 /* ContentView.swift */,
+				A22DE0122C0345E900646A92 /* VaultListView.swift */,
+				A20E90782C034E6F002052A1 /* NewVaultView.swift */,
+				A22DE03A2C03463900646A92 /* Vault.swift */,
 				A22DE0142C0345EA00646A92 /* Assets.xcassets */,
 				A22DE0162C0345EA00646A92 /* Preview Content */,
 			);
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22DE0132C0345E900646A92 /* ContentView.swift in Sources */,
+				A22DE03B2C03463900646A92 /* Vault.swift in Sources */,
+				A22DE0132C0345E900646A92 /* VaultListView.swift in Sources */,
+				A20E90792C034E6F002052A1 /* NewVaultView.swift in Sources */,
 				A22DE0112C0345E900646A92 /* MyVaultApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
