@@ -45,7 +45,7 @@ struct VaultListView: View {
                         .onDelete { indexSet in
                             indexSet.ForEach { index in
                                 let vault = vaults[index]
-                                context.delete(vaults)
+                                context.delete(vault)
                             }
                         }
                     }
