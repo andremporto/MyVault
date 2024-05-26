@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct VaultListView: View {
+    @Environment(\.modelContext) private var context
     @Query(sort: \Vault.title) private var vaults: [Vault]
     @State private var createNewVault = false
     
@@ -28,11 +29,9 @@ struct VaultListView: View {
                                     VStack(alignment: .leading) {
                                         Text(vault.title).font(.title2)
                                         Text(vault.vaultnumber).foregroundStyle(.secondary)
-                                        
                                         if let rating = vault.rating {
                                             HStack {
-                                                ForEach(0..<rating, id: \.self) {
-                                                    _ in
+                                                ForEach(0..<rating, id: \.self) { _ in
                                                     Image(systemName: "star.fill")
                                                         .imageScale(.small)
                                                         .foregroundStyle(.yellow)
@@ -42,10 +41,11 @@ struct VaultListView: View {
                                     }
                                 }
                             }
-                            .onDelete { IndexSet in
-                                IndexSet.ForEach { index in
-                                    let vault = vaults[index]
-                                }
+                        }
+                        .onDelete { indexSet in
+                            indexSet.ForEach { index in
+                                let vault = vaults[index]
+                                context.delete(vaults)
                             }
                         }
                     }
