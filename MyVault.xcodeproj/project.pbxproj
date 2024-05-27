@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A20E90792C034E6F002052A1 /* NewVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E90782C034E6F002052A1 /* NewVaultView.swift */; };
+		A20E907D2C038978002052A1 /* EditVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E907C2C038978002052A1 /* EditVaultView.swift */; };
+		A20E907F2C038A02002052A1 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E907E2C038A01002052A1 /* RatingsView.swift */; };
 		A22DE0112C0345E900646A92 /* MyVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE0102C0345E900646A92 /* MyVaultApp.swift */; };
 		A22DE0132C0345E900646A92 /* VaultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE0122C0345E900646A92 /* VaultListView.swift */; };
 		A22DE0152C0345EA00646A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22DE0142C0345EA00646A92 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		A20E90782C034E6F002052A1 /* NewVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVaultView.swift; sourceTree = "<group>"; };
+		A20E907C2C038978002052A1 /* EditVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVaultView.swift; sourceTree = "<group>"; };
+		A20E907E2C038A01002052A1 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		A22DE00D2C0345E900646A92 /* MyVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22DE0102C0345E900646A92 /* MyVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVaultApp.swift; sourceTree = "<group>"; };
 		A22DE0122C0345E900646A92 /* VaultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultListView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			children = (
 				A22DE0102C0345E900646A92 /* MyVaultApp.swift */,
 				A22DE0122C0345E900646A92 /* VaultListView.swift */,
+				A20E907C2C038978002052A1 /* EditVaultView.swift */,
+				A20E907E2C038A01002052A1 /* RatingsView.swift */,
 				A20E90782C034E6F002052A1 /* NewVaultView.swift */,
 				A22DE03A2C03463900646A92 /* Vault.swift */,
 				A22DE0142C0345EA00646A92 /* Assets.xcassets */,
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22DE03B2C03463900646A92 /* Vault.swift in Sources */,
+				A20E907F2C038A02002052A1 /* RatingsView.swift in Sources */,
 				A22DE0132C0345E900646A92 /* VaultListView.swift in Sources */,
 				A20E90792C034E6F002052A1 /* NewVaultView.swift in Sources */,
+				A20E907D2C038978002052A1 /* EditVaultView.swift in Sources */,
 				A22DE0112C0345E900646A92 /* MyVaultApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
